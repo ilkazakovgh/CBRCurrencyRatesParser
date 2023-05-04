@@ -9,7 +9,7 @@ class CurrencyRatesParser
     }
     public function loadRates() : bool
     {
-        if ($this->xmlDoc->load(CURRENCY_RATES_URL . "?date_req=" .date('d.m.Y'))) {
+        if ($this->xmlDoc->load(CURRENCY_RATES_URL . '?date_req=' .date('d.m.Y'))) {
             $this->rates = [];
             $root = $this->xmlDoc->documentElement;
 
